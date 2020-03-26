@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Icons -->
+    <script src="https://kit.fontawesome.com/aa2b6baa09.js" crossorigin="anonymous"></script>
+    <!-- Open Sans FONT  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <!-- LATO FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+    <title>Web Application</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar sticky-top navbar-expand-sm pb-3">
+      <a class="navbar-brand" style="text-transform:uppercase; font-weight: 700;" href="index.html"><i class="fas fa-home mr-1"></i></i>Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color: white; line-height:30px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutMe">About Me</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Resume</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of Nav Bar -->
+    <!-- Beginning of Header-->
+    <div class="main">
+      <div class="header py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex justify-content-center align-items-end" id="header">
+              <h2 class="text-center display-3 pr-3">Hi,</h2>
+              <p class="text-center pr-3">my name is</p>
+              <h1 class="text-center display-3 pr-3">Jason Yu</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Header -->
+      <!-- Beginning of About Me -->
+      <div class="aboutMe" id="aboutMe">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="row">
+                  <div class=" col-12 col-md-6 text-center">
+                    <h5 class="text-center mb-3" style="font-size: 2rem;">About Me</h5>
+                    <img src="../images/Main.jpg" class="img-fluid img-thumbnail rounded-circle mb-3 resize" alt="profile">
+                    <hr>
+                    <div class="card-body text-center">
+                      I am an aspiring software engineer with a B.S. in Technology Management Information from UC Santa Cruz. With a background in business and design, I aim for creating intuitive and sleek web experiences.
+                    </div>
+                    <div class="resume">
+                      <form method="get" action="../documents/ResumeJason2020.pdf">
+                        <button type="submit">Resume</button>
+                      </form>
+                    </div>
+                    <div class="social-media mt-3">
+                      <a href="https://www.linkedin.com/in/jasonyu529/">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                      </a>
+                      <a href="https://github.com/jasontech1998">
+                        <i class="fab fa-github-square fa-2x"></i>
+                      </a>
+                      <a href="https://www.instagram.com/jasonyugetsb/">
+                        <i class="fab fa-instagram-square fa-2x"></i>
+                      </a>
+                      <a href="https://www.facebook.com/SadMelons">
+                        <i class="fab fa-facebook-square fa-2x mb-5"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 text-center d-flex flex-column justify-content-center align-items-center">
+                    <h3 style="text-decoration: underline;">Languages</h3>
+                    <ul id="double">
+                      <li>Javascript</li>
+                      <li>Python</li>
+                      <li>HTML5/CSS</li>
+                      <li>Java</li>
+                    </ul>
+                    <h3 style="text-decoration: underline;">Frameworks</h3>
+                    <ul id="double">
+                      <li>ReactJS</li>
+                      <li>Node.js</li>
+                      <li>MySQL</li>
+                      <li>Bootstrap 4</li>
+                    </ul>
+                    <h3 style="text-decoration: underline;">Relevant Courses</h3>
+                    <ul id="double" class="list-group list-group-flush">
+                      <li class="list-group-item">Data Structures</li>
+                      <li class="list-group-item">Computer Networks</li>
+                      <li class="list-group-item">Human-Centered Design Research</li>
+                      <li class="list-group-item">Database Management Systems</li>
+                      <li class="list-group-item">Accelerated Programming</li>
+                      <li class="list-group-item">Business Information System</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of About Me -->
+      <!-- Beginning of Projects -->
+      <div class="mt-3" id="projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 id="project" class="display-4">Projects</h2>
+              <div class="projects mt-4">
+                <div class="row">
+                  <div class="col box">
+                    <h2>Responsive Portfolio</h2>
+                    <i class="fas fa-laptop fa-5x mb-4"></i>
+                    <p>Created a fully responsive web page to display my design and front end web development skills.</p>
+                    <h4>Tech used:</h4>
+                    <ul id="double">
+                      <li>HTML5</li>
+                      <li>CSS</li>
+                      <li>Bootstrap</li>
+                      <li>Server</li>
+                    </ul>
+                  </div>
+                  <div class="col box">
+                    <h2>Twitter API Bot</h2>
+                    <i class="fab fa-twitter fa-5x mb-4"></i>
+                    <p>Created a Twitter bot that scrapes a user's profile page and likes any original tweets while ignoring retweets and replies to avoid spamming.</p>
+                    <h4>Tech used:</h4>
+                    <ul id="double">
+                      <li>Python</li>
+                      <li>Tweepy Library</li>
+                    </ul>    
+                  </div>
+                  <div class="col box">
+                    <h2>FitCheck Team Project</h2>
+                    <i class="fas fa-tshirt fa-5x mb-4"></i>
+                    <p>Worked with a team to design a product that uses VR technology to provide users with a better online shopping experience.</p>
+                    <h4>What I learned:</h4>
+                    <ul id="double">
+                      <li>Reverse Engineering</li>
+                      <li>Financial Model</li>
+                      <li>Demand Forecasting</li>
+                      <li>Supply Chain Management</li>
+                    </ul>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Projects -->
+      <!-- Beginning of Contact -->
+      <div class="contact" id="contact"> 
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <h2 id="inTouch" class="display-4 my-3">Get in Touch</h2>
+              <div class="col box">
+                <h4 class="mb-2">Interested in working together?</h4>
+                <div class="email mt-4">
+                  <a href="mailto:jasontech1998@gmail.com">
+                    <i class="fas fa-envelope"> Send</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Contact -->
+    <div style="height: 50px;"></div>
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
