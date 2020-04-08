@@ -163,11 +163,31 @@ hr {
   color: #333;
   width: 100px;
   height: 40px;
-  border: 1px solid #3498db;
+  border: 1px solid #72baeb;
   font-size: 15px;
   border-radius: 50px;
   transition: .6s;
   overflow: hidden;
+}
+
+.applied {
+  width: 130px;
+  padding: 5px;
+  font-size: 18px;
+  align-items: center;
+  background: #cccccc33;
+  border: 1px solid #cccccc33;
+  box-shadow: 0 5px 15px -5px #080808;
+  border-radius: 10%;
+  color: #333;
+  transition: .6s;
+  overflow: hidden;
+  position: relative;
+}
+
+.applied:hover {
+  transform: scale(1.1);
+  background: none;
 }
 
 
