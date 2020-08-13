@@ -11,65 +11,42 @@ html {
 body {
   width: 100%;
   height: 100%;
-  color: #fff;
-  background: linear-gradient(-45deg, #003973, #e5e5be);
+  color: rgb(198, 208, 235);
+  background: #0f0c29; 
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
   font-family: 'Open Sans', sans-serif;
-}
-
-
-.navbar {
-  background-image: linear-gradient(rgb(103, 178, 248), rgba(0,0,0,0));
-  background-color: transparent;
-}
-
-.navbar a {
-  color: white;
 }
 
 .main {
   font-family: 'Lato', sans-serif;
-}
-
-.header p {
-  font-size: 2rem;
+  padding: 50px;
 }
 
 .aboutMe {
-  color: #333;
-  /* text-shadow: #ccc 0px 2px 5px; */
+  color: rgb(198, 208, 235);
+  margin-top: 50px;
 }
 
 .card {
-  margin: 16px auto;
-  padding: 16px;
-  background-color: #f0f0f0;
+  padding: 32px;
+  background: rgba(4, 8, 37, 0.8);
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  border-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0.75rem;
 }
-
-.resize {
-  width: 250px;
-  height: auto;
+.card-body {
+  margin-bottom: 40px;
 }
-
-hr {
-  border: 0;
-  width: 300px;
+.linkWrapper {
+  width: 130px;
   margin: auto;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-#project,
-#inTouch,
-#header {
-  text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
-  color: #f0f0f0;
+.mainPicture {
+  width: 150px;
 }
 
-#double {
-  column-count: 2;
-  column-gap: 40px;
-}
 
 .list-group-item {
   background-color: transparent;
@@ -85,7 +62,7 @@ hr {
   background: #cccccc33;
   border-radius: 10%;
   box-shadow: 0 5px 15px -5px #080808;
-  color: #f0f0f0;
+  color: rgb(198, 208, 235);
   overflow: hidden;
   position: relative;
 }
@@ -97,7 +74,7 @@ hr {
 }
 .email a:hover i{
   transform: scale(1.1);
-  color: #f0f0f0;
+  color: rgb(198, 208, 235);
 }
 
 /* Social Media Icons */
@@ -107,10 +84,9 @@ hr {
   height: 50px;
   margin: 10px;
   align-items: center;
-  background: #c9c8c833;
+  background: rgb(198, 208, 235);
   border-radius: 30%;
-  box-shadow: 0 5px 15px -5px #66ade7;
-  color: #3498db;
+  color: #24243e;
   overflow: hidden;
   position: relative;
 }
@@ -123,7 +99,7 @@ hr {
 
 .social-media a:hover i{
   transform: scale(1.3);
-  color: #f0f0f0;
+  color: rgb(198, 208, 235);
 }
 
 .social-media a::before {
@@ -131,7 +107,7 @@ hr {
   position: absolute;
   width: 120%;
   height: 120%;
-  background: #3498db;
+  background: #24243e;
   transform: rotate(45deg);
   left: -110%;
   top: 90%;
@@ -159,58 +135,108 @@ hr {
 
 /* Resume Button */
 .resume button {
-  background: none;
-  color: #333;
+  background: rgb(198, 208, 235);
+  color: #24243e;
   width: 100px;
   height: 40px;
-  border: 1px solid #72baeb;
+  border: 1px solid rgb(198, 208, 235);
   font-size: 15px;
   border-radius: 50px;
   transition: .6s;
   overflow: hidden;
 }
 
-.applied {
-  width: 130px;
-  padding: 5px;
-  font-size: 18px;
-  align-items: center;
-  background: #cccccc33;
-  border: 1px solid #cccccc33;
-  box-shadow: 0 5px 15px -5px #080808;
-  border-radius: 10%;
-  color: #333;
-  transition: .6s;
-  overflow: hidden;
-  position: relative;
-}
-
-.applied:hover {
-  transform: scale(1.1);
-  background: none;
-}
-
-
 button:hover {
-  background: #3498db;
-  color: #f0f0f0;
+  background: #24243e;
+  color: rgb(198, 208, 235);
   cursor: pointer;
 }
 
 /* Projects */
+.projectsWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
 
 .box {
+  display: flex;
+  flex-direction: column;
   padding: 50px;
-  background: rgba(255,255,255,.2);
+  border-radius: 1rem;
   position: relative;
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
-  margin: 5px;
+  margin: 10px;
 }
 
 .box h2 {
   margin: 0 0 20px;
   padding: 0;
   font-size: 2rem;
-  
+}
 
+
+#project,
+#inTouch,
+#header {
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+  color: rgb(198, 208, 235);
+}
+
+#double {
+  display: flex;
+  margin: 0 auto;
+  column-count: 2;
+  column-gap: 40px;
+  margin-bottom: 30px;
+}
+#double li {
+  display: flex;
+  margin: 0 auto;
+}
+.projectLink{
+  width: 130px;
+  padding: 5px;
+  font-size: 18px;
+  align-items: center;
+  background: rgb(198, 208, 235);
+  border: 1px solid #24243E;
+  box-shadow: 0 5px 15px -5px #080808;
+  border-radius: 0.5rem;
+  color: #333;
+  transition: .6s;
+  overflow: hidden;
+  position: relative;
+}
+
+.projectLink:hover {
+  transform: scale(1.1);
+  background: none;
+  border: 1px solid rgb(198, 208, 235);
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 10px 0px;
+  }
+  .aboutMe {
+    margin-top: 20px;
+  }
+  .card-body {
+    margin-bottom: 0;
+  }
+  
+  #double {
+    display: initial;
+    column-count: 1;
+  }
+  #double li {
+    display: block;
+    margin: auto;
+  }
+  .box {
+    margin: 10px 0px;
+  }
+  .projectsWrapper {
+    width: 93%;
+  }
 }
