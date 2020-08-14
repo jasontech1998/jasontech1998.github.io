@@ -12,7 +12,8 @@ body {
   width: 100%;
   height: 100%;
   color: rgb(198, 208, 235);
-  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(77,63,171,1) 67%, rgba(0,138,255,1) 100%);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(77,63,171,1) 83%, rgba(117,104,255,1) 100%);
+
   /* background: #0f0c29; 
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  */
@@ -40,6 +41,7 @@ body {
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 30px 60px;
 }
 
 .card-body {
@@ -180,7 +182,8 @@ button:hover {
 }
 
 .box:hover {
-  transform: translateY(-20px);
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 30px 60px;
 }
 
 .box h2 {
@@ -255,7 +258,7 @@ button:hover {
     display: block;
     margin: auto;
   }
-  .box {
+  .box, .emailBox {
     margin: 10px 0px;
   }
   .projectsWrapper {
