@@ -3,21 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-family: 'Open Sans', sans-serif;
-  scroll-behavior: smooth;
-}
 
 body {
   width: 100%;
   height: 100%;
   color: rgb(198, 208, 235);
-  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(77,63,171,1) 83%, rgba(117,104,255,1) 100%);
-
-  /* background: #0f0c29; 
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  */
-  font-family: 'Open Sans', sans-serif;
+  background: url(../images/darkMode.jpeg);
+  /* To scale the wallpaper center */
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat:   no-repeat;
 }
 
 .main {
@@ -57,35 +52,10 @@ body {
   width: 150px;
 }
 
-
 .list-group-item {
   background-color: transparent;
 }
-/* Send email */
-.email a {
-  display: inline-block;
-  width: 110px;
-  height: 50px;
-  margin: 5px;
-  font-size: 12px;
-  align-items: center;
-  background: #cccccc33;
-  border-radius: 10%;
-  box-shadow: 0 5px 15px -5px #080808;
-  color: rgb(198, 208, 235);
-  overflow: hidden;
-  position: relative;
-}
 
-.email i {
-  line-height: 50px;
-  font-size: 25px;
-  transition: 0.2s linear;
-}
-.email a:hover i{
-  transform: scale(1.1);
-  color: rgb(198, 208, 235);
-}
 
 /* Social Media Icons */
 .social-media a {
@@ -237,6 +207,31 @@ button:hover {
   transform: scale(1.1);
   background: none;
   border: 1px solid rgb(198, 208, 235);
+}
+
+.email a {
+  display: inline-block;
+  width: 110px;
+  height: 50px;
+  margin: 5px;
+  font-size: 12px;
+  align-items: center;
+  background: #cccccc33;
+  border-radius: 10%;
+  box-shadow: 0 5px 15px -5px #080808;
+  color: rgb(198, 208, 235);
+  overflow: hidden;
+  position: relative;
+}
+
+.email i {
+  line-height: 50px;
+  font-size: 25px;
+  transition: 0.2s linear;
+}
+.email a:hover i{
+  transform: scale(1.1);
+  color: rgb(198, 208, 235);
 }
 
 @media (max-width: 480px) {
