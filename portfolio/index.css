@@ -56,7 +56,6 @@ body {
   background-color: transparent;
 }
 
-
 /* Social Media Icons */
 .social-media a {
   display: inline-block;
@@ -134,9 +133,15 @@ button:hover {
 
 /* Projects */
 .projectsWrapper {
-  width: 80%;
   margin: 0 auto;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
 
 .box, .emailBox {
   display: flex;
@@ -149,6 +154,7 @@ button:hover {
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
   margin: 10px;
   transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+  overflow: hidden;
 }
 
 .box:hover {
@@ -261,5 +267,8 @@ button:hover {
   }
   .contact {
     width: auto;
+  }
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
